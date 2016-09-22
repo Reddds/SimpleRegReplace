@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<Pattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Hig SoundList to Web">
+  <Item>
+    <SearchString>&lt;first&gt;(((?!&lt;/?first&gt;).)+)&lt;/first&gt;</SearchString>
+    <ReplaceString>&lt;p&gt;$1&lt;/p&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;txt_b_b&gt;(((?!&lt;/?txt_b_b&gt;).)+)&lt;/txt_b_b&gt;</SearchString>
+    <ReplaceString>&lt;b&gt;$1&lt;/b&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;\?xml:stylesheet type="text/xsl" href="[^"]+"\?&gt;</SearchString>
+    <ReplaceString />
+  </Item>
+  <Item>
+    <SearchString>&lt;teorija/&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;fon1&gt;((?!&lt;/?fon1&gt;).)+&lt;/fon1&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;deep\d+/&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;opnfile&gt;((?!&lt;/?opnfile&gt;).)+&lt;/opnfile&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;unit number="\d+"&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;theory language="(\w{2})"&gt;(((?!&lt;/?theory&gt;).)+)&lt;/theory&gt;</SearchString>
+    <ReplaceString>&lt;lang id="$1"&gt;$2&lt;/lang&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;mainmenu num="\d+"/&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;navigator textnum="\d+"\s*pagenum="\d+"\s*zvuknum="\d+"\s*/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;topic lang="\w+"&gt;(((?!&lt;/?topic&gt;).)+)&lt;/topic&gt;</SearchString>
+    <ReplaceString>&lt;page&gt;$1&lt;/page&gt;</ReplaceString>
+  </Item>
+  <Item Enabled="false">
+    <SearchString>&lt;/topic&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;page num="([^"]+)" deep="\d+"&gt;(((?!&lt;/?page&gt;).)+)&lt;/page&gt;</SearchString>
+    <ReplaceString>&lt;content title="$1"&gt;$2&lt;/content&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;/unit&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;li_navig pagename="\w+" menuname="\w+"&gt;(((?!&lt;/?li_navig&gt;).)+)&lt;/li_navig&gt;</SearchString>
+    <ReplaceString>&lt;li&gt;&lt;link id=""&gt;$1&lt;/link&gt;&lt;/li&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;targettopl_navig menuname="\w+" /&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;part&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;/part&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;link_navig pagename="\w+"\s*(?:menuname="\w+")&gt;(((?!&lt;/?link_navig&gt;).)+)&lt;/link_navig&gt;</SearchString>
+    <ReplaceString>&lt;link id=""&gt;$1&lt;/link&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;link target="[^"]+"&gt;(((?!&lt;/?link&gt;).)+)&lt;/link&gt;</SearchString>
+    <ReplaceString>&lt;link id=""&gt;$1&lt;/link&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;li target="[^"]+"&gt;(((?!&lt;/?li&gt;).)+)&lt;/li&gt;</SearchString>
+    <ReplaceString>&lt;li&gt;&lt;link id=""&gt;$1&lt;/link&gt;&lt;/li&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;gif/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;txt_b_i&gt;(((?!&lt;/?txt_b_i&gt;).)+)&lt;/txt_b_i&gt;</SearchString>
+    <ReplaceString>&lt;i&gt;$1&lt;/i&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;targettopl&gt;((?!&lt;/?targettopl&gt;).)+&lt;/targettopl&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;targettopr&gt;((?!&lt;/?targettopl&gt;).)+&lt;/targettopr&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;sounds_frame[^&gt;]+/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;translation/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;transcription/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;page num="([^"]+)"[^&gt;]+&gt;(((?!&lt;/?page&gt;).)+)&lt;/page&gt;</SearchString>
+    <ReplaceString>&lt;content title="$1"&gt;$2&lt;/content&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;description language="(\w+)"&gt;(((?!&lt;/?description&gt;).)+)&lt;/description&gt;</SearchString>
+    <ReplaceString>&lt;lang id="$1"&gt;$2&lt;/lang&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;zvuk&gt;\d+&lt;/zvuk&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;play file="\w+"/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;word\s+spelling\s*=\s*"(?&lt;Title&gt;[^"]+)"\s+pronounce\s*=\s*"(?&lt;PhraseId&gt;[^"]+)"\s*/&gt;</SearchString>
+    <ReplaceString>&lt;module type="sound" title="$1" phraseId="$2" /&gt;</ReplaceString>
+    <PluginName>Test</PluginName>
+  </Item>
+  <Item>
+    <SearchString>&lt;word\s+spelling\s*=\s*"(?&lt;Title&gt;[^"]+)"\s+pronounce\s*=\s*"(?&lt;PhraseId&gt;[^"]+)\s*"&gt;\s*&lt;/word&gt;</SearchString>
+    <ReplaceString>&lt;module type="sound" title="$1" phraseId="$2" /&gt;</ReplaceString>
+    <PluginName>Test</PluginName>
+  </Item>
+  <Item>
+    <SearchString>&lt;exampleColumns&gt;\d+&lt;/exampleColumns&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;examples&gt;(((?!&lt;/?examples&gt;).)+)&lt;/examples&gt;</SearchString>
+    <ReplaceString>&lt;soundlist&gt;$1&lt;/soundlist&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;exceptions from="\w+"&gt;(((?!&lt;/?exceptions&gt;).)+)&lt;/exceptions&gt;</SearchString>
+    <ReplaceString>&lt;soundlist class="exception"&gt;$1&lt;/soundlist&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;exceptions&gt;\s+&lt;/exceptions&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;target&gt;(((?!&lt;/?target&gt;).)+)&lt;/target&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;targetl&gt;(((?!&lt;/?targetl&gt;).)+)&lt;/targetl&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;targetr&gt;(((?!&lt;/?targetr&gt;).)+)&lt;/targetr&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;image&gt;vow.gif&lt;/image&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;comb type="X-consonant"&gt;(((?!&lt;/?comb&gt;).)+)&lt;/comb&gt;</SearchString>
+    <ReplaceString>&lt;span class="comb"&gt;$1 + согласная&lt;/span&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;comb&gt;(((?!&lt;/?comb&gt;).)+)&lt;/comb&gt;</SearchString>
+    <ReplaceString>&lt;span class="comb"&gt;$1&lt;/span&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;letter_s&gt;(((?!&lt;/?letter_s&gt;).)+)&lt;/letter_s&gt;</SearchString>
+    <ReplaceString>&lt;span class="super-exception"&gt;$1&lt;/span&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;lang id="GB"&gt;</SearchString>
+    <ReplaceString>&lt;lang id="en"&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;lang id="SP"&gt;</SearchString>
+    <ReplaceString>&lt;lang id="es"&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;lang id="CH"&gt;</SearchString>
+    <ReplaceString>&lt;lang id="zh"&gt;</ReplaceString>
+  </Item>
+</Pattern>

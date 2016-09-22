@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../topicSound.xsl"?>
+<topic lang="RU">
+
+
+<mainmenu num="1" />
+<navigator textnum="1" pagenum="1" zvuknum="1" />
+<num>1</num>
+<targettopl>Vow_22_1</targettopl>
+<targettopr>Vow_2_1</targettopr>
+<page num="1" soundname="[ɪ:]">
+<sounds_frame mark="yes"/>
+<sound>I:</sound>
+<image>ii</image>
+<opnfile>Vow</opnfile>
+<sndbut>1vow</sndbut>
+
+<description language="RU">
+Звук похож на русский <phonem>[ии]</phonem> в словах "<b>России</b>", "<b>стихии</b>", или на <phonem>[ий]</phonem> в слове "<b>кий</b>". Кончик языка касается нижних зубов. Губы несколько растянуты. В действительности это дифтонг <phonem>[ɪɪ:]</phonem>, где первый звук <phonem>[ɪ]</phonem> - скольжение, а <phonem>[ɪ:]</phonem> - ядро. 
+</description>
+<description language="CH">
+舌尖抵下齿，唇角向两边微咧。实际上，这是双元音<phonem>[ii:]</phonem>，其中第一个 <phonem>[i]</phonem>是滑音，而<phonem>[i:]</phonem>是音核。
+</description>
+<description language="GB">
+<phonem>[ɪ:]</phonem> - High-tongue front vowel, tense and long. Tension and length are maintained by a glide, in standard speech, from <phonem>[ɪ]</phonem> to <phonem>[ɪ:]</phonem> so that the vowel is more accurately written phonetically as <phonem>[ɪɪ:]</phonem> and should be practised like this: the pure vowel <phonem>[ɪ:]</phonem> is heard only from a) Scots and Northumbrian speakers b) foreign speakers c) speakers of a very affected style
+</description>
+<description language="SP">
+<phonem>[ɪ:]</phonem> - Sonido vocal alto pre lingual, tenso y largo. La tensión y la longitud del sonido se mantienen en el habla estándar, prolongando el sonido del <phonem>[i]</phonem> al <phonem>[i:]</phonem> de tal modo que en la transcripción fonética sería mejor representarlo así <phonem>[ii:]</phonem> y debe practicarse de este modo: el puro sonido vocal <phonem>[i:]</phonem> se oye solamente en el habla a) de los representantes de Escocia y Nortumbria b) de los extranjeros c) de los que hablan de manera muy  afectiva. 
+</description>
+<description language="DE">
+<phonem>[ɪ:]</phonem> Beim Aussprechen des Lautes <phonem>[ɪ:]</phonem> schiebt sich die Zunge nach vorn. Die Vorderzunge hebt sich in Richtung auf den harten Gaumen. Die Lippen spreizen sich. Die Lippenöffnung ist ziehmlich schmal. Der Laut <phonem>[ɪ:]</phonem> ist ein langer, gespannter Vorderzungenvokal mit höchstmöglicher Zungenhebung. Der Anfang des Lautes ist offener und weniger gespannt, als das Ende. 
+</description>
+ <description language="IT">
+<phonem>[ɪ:]</phonem>. La tensione e la lunghezza sono mantenute da un passaggio da un suono vocalico ad un altro, nella lingua standard, dal <phonem>[i]</phonem> al <phonem>[i:]</phonem> così che le vocali sono foneticamente scritte più accuratamentecome il <phonem>[ii:]</phonem> e potrebbe far pratica: la vocale pura <phonem>[i:]</phonem> si sente solo dai: Scots e Northumbrian, dagli stranieri, da soggetti con uno stile ricercato.
+</description>
+</page>
+<page num="2" soundname="[ɪ:t]">
+<sounds_frame markcommon="yes"/>
+
+<sound>I:t</sound>
+<image>iit</image>
+<description language="RU">
+Потренируйтесь произносить звуки <phonem>[ɪ:t]</phonem>. Язык сначала занимает положение звука <phonem>[ɪ:]</phonem>, а затем переходит в положение звука <phonem>[t]</phonem>. 
+</description>
+<description language="CH">
+练习发<phonem>[ɪ:t]</phonem>音。舌头先呈发<phonem>[ɪ:]</phonem>时的状态，然后过渡到发<phonem>[t]</phonem>音的状态。
+</description>
+<description language="GB">
+Practise pronouncing the sounds <phonem>[ɪ:t]</phonem>. Initially, the tongue occupies the position of the first sound and then it moves into the position of the second sound. 
+</description>
+<description language="SP">
+Practique pronunciando los sonidos <phonem>[ɪ:t]</phonem>. Inicialmente la lengua ocupa la posición del primer sonido y a continuación se desplaza a la posición del segundo sonido. 
+</description>
+<description language="DE">
+Üben Sie die Aussprache der Laute <phonem>[ɪ:t]</phonem>. Die Zunge gleitet aus der Stellung des ersten Lautes in die des zweiten. 
+</description>
+ <description language="IT">
+Pronunciando i suoni  <phonem>[ɪ:t]</phonem>. Inizialmente, la lingua occupa la posizione del primo suono e successivamente si muove verso la posizione del secondo suono.
+</description>
+</page>
+<page num="3" soundname="[ɪ:d]">
+<sounds_frame markcommon="yes"/>
+<sound>I:d</sound>
+<image>iid</image>
+<description language="RU">
+Потренируйтесь произносить звуки <phonem>[ɪ:d]</phonem>. Язык сначала занимает положение звука <phonem>[ɪ:]</phonem>, а затем переходит в положение звука <phonem>[d]</phonem>. 
+</description>
+<description language="CH">
+练习发<phonem>[ɪ:d]</phonem>音。舌头先呈发<phonem>[ɪ:]</phonem>时的状态，然后过渡到发<phonem>[d]</phonem>音的状态。
+</description>
+<description language="GB">
+Practise pronouncing the sounds <phonem>[ɪ:d]</phonem>. Initially, the tongue occupies the position of the first sound and then it moves into the position of the second sound. 
+</description>
+<description language="SP">
+Practique pronunciando los sonidos <phonem>[ɪ:d]</phonem>. Inicialmente la lengua ocupa la posición del primer sonido y a continuación se desplaza a la posición del segundo sonido. 
+</description>
+<description language="DE">
+Üben Sie die Aussprache der Laute <phonem>[ɪ:d]</phonem>. Die Zunge gleitet aus der Stellung des ersten Lautes in die des zweiten. 
+</description>
+ <description language="IT">
+Pronunciando i suoni  <phonem>[ɪ:d]</phonem>. Inizialmente, la lingua occupa la posizione del primo suono e successivamente si muove verso la posizione del secondo suono.
+</description>
+</page>
+</topic>

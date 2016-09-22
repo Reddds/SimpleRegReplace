@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Pattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Из Joomla! редактора. Очистка от Word">
+	<Item>
+    <SearchString>public\svoid\s+(?&lt;fnc&gt;\w+\([^\(]*\))\s+\{\s+_inst\.;</SearchString>
+    <ReplaceString>public void ${fnc} { _inst.${fnc};</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>public\s+(?&lt;type&gt;\w+)\s+(?&lt;fnc&gt;\w+\([^\(]*\))\s+\{\s+_inst\.;</SearchString>
+    <ReplaceString>public ${type} ${fnc} {return _inst.${fnc};</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>(?&lt;first&gt;_inst\..+)(\bstring|\buint|\bint|\bdouble|\bfloat|\blong|\bbool)(?&lt;last&gt;.+;)</SearchString>
+    <ReplaceString>${first}${last}</ReplaceString>
+  </Item>
+</Pattern>

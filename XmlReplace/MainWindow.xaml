@@ -1,0 +1,94 @@
+﻿<Window x:Class="XmlReplace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:properties="clr-namespace:XmlReplace.Properties"
+        Title="MainWindow" Height="471.99" Width="725.8" Closed="MetroWindowClosed">
+    <!--<Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="BAbout" Grid.Column="2" HorizontalAlignment="Right" Width="30" Content="?" Click="BAbout_OnClick"></Button>
+        <!--        <TextBox Name="OutpTextBox" Grid.Column="2" Grid.Row="1" AcceptsReturn="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"  />-->
+
+        <Button Grid.ColumnSpan="3" x:Name="BConvert" Click="BConvertClick" Margin="0,0,30,0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Resources\Images\play.png"></Image>
+                <TextBlock VerticalAlignment="Center" Margin="10,0,0,0">Преобразовать</TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Label Grid.Row="1" VerticalAlignment="Top" Margin="0,0,90,0" Height="30" Content="Избранные"></Label>
+        <ListBox Name="LbFavorites" Grid.Row="1" Margin="0,30,50,0" DisplayMemberPath="Name" MouseDoubleClick="LbFavorites_MouseDoubleClick" >
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Свойства" Click="MenuItemParamsFavoriteOnClick" />
+                    <Separator></Separator>
+                    <MenuItem Header="Удалить" Click="MenuItemRemoveFavoriteOnClick" />
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
+        <Grid Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" Width="50">
+            <StackPanel VerticalAlignment="Center">
+                <Button Name="BAddToFavorites"  Content="&lt;" FontSize="24" Click="BAddToFavoritesClick" Margin="5" ToolTip="Добавить текущий конвертер в избранное"></Button>
+                <Button Name="BAddAllToFavorites" Content="&lt;&lt;" FontSize="24" Click="BAddAllToFavoritesClick" Margin="5" ToolTip="Добавить все конвертеры в избранное"></Button>
+                <Button Name="BAddFromFavorites"  Content="&gt;" FontSize="24" Click="BAddFromFavorites_OnClick" ToolTip="Добавить в рабочий список конвертер или набор конвертеров" Margin="5"  />
+
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="0,30">
+            <ListBox Name="ConvertersSequence" HorizontalContentAlignment="Stretch" MinWidth="100">
+                <ListBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Свойства" Click="MenuItemParamsOnClick" />
+                        <Separator></Separator>
+                        <MenuItem Header="Удалить" Click="MenuItemRemoveOnClick" />
+                    </ContextMenu>
+                </ListBox.ContextMenu>
+            </ListBox>
+            <StackPanel Orientation="Vertical">
+                <Button Name="BMoveUp" Content="^" Click="BMoveUp_OnClick"></Button>
+                <Button Name="BMoveDown" Content="v" Click="BMoveDown_OnClick"></Button>
+            </StackPanel>
+        </StackPanel>
+        <Grid Grid.Column="2" Grid.Row="1" Width="50" HorizontalAlignment="Left">
+         <Button Name="AddConverter" Content="&lt;" Margin="5" VerticalAlignment="Center" FontSize="24" Click="AddConverterClick"></Button>
+           
+        </Grid>
+        <ListBox Grid.Row="1" Grid.Column="2" Name="ConvertersList" Margin="50,0,0,0"></ListBox>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" >
+            <Label>Рабочая зона</Label>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" Height="40">
+            <Button Name="BLoadConvSequence" Margin="5" Width="80" Content="Открыть" Click="BLoadConvSequenceClick"></Button>
+ <Button Name="BSaveConvSequence"  Margin="5" Content="Сохранить" Click="BSaveConvSequenceClick"></Button>
+         
+        </StackPanel>
+
+        <!--        <TextBox Grid.Row="2" Grid.ColumnSpan="3" Name="LogOut" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"></TextBox>-->
+        <FlowDocumentScrollViewer x:Name="LogOut" Grid.Row="2" Grid.ColumnSpan="3" ></FlowDocumentScrollViewer>
+    </Grid>
+
+</Window>

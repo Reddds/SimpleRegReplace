@@ -1,0 +1,28 @@
+﻿<Window x:Class="XmlReplace.Converters.CustomConverters.Hig6DictantInputPart.DictantInputPartConverterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InputPartConverterWindow" Height="311.039" Width="540.704">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock VerticalAlignment="Center" Margin="5">Укажите Xml файл упражнения</TextBlock>
+            <Button Content="..." Width="30" VerticalAlignment="Center" Margin="10" Click="ChooseXmlOnClick"></Button>
+            <TextBlock VerticalAlignment="Center" Margin="10">Номер раздела:</TextBlock>
+            <TextBox Name="TbSectionId" Width="50" Height="24"></TextBox>
+        </StackPanel>
+        <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="1">Введите название из навигации, например <LineBreak/>
+        &lt;word spelling="все звуки" pronounce="Dict_All_wrd" language="RU" id="1"/&gt;<LineBreak/>
+	&lt;word spelling="All sounds" pronounce="Dict_All_wrd" language="GB" id="1"/&gt;<LineBreak/>
+	&lt;word spelling="sonido" pronounce="Dict_All_wrd" language="SP" id="1"/&gt;<LineBreak/>
+	&lt;word spelling="Laut " pronounce="Dict_All_wrd" language="DE" id="1"/&gt;<LineBreak/>	
+	&lt;word spelling="Suono" pronounce="Dict_All_wrd" language="IT" id="1"/&gt;<LineBreak/>
+	&lt;word spelling="全部音" pronounce="Dict_All_wrd" language="CH" id="1"/&gt;
+        </TextBlock>
+<!--        <CheckBox x:Name="cbUseGroups" Grid.Row="1" VerticalAlignment="Center" Margin="10" Visibility="Hidden">Использовать группы</CheckBox>-->
+        <TextBox Name="TbTitle" AcceptsReturn="True" Grid.Row="2" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"></TextBox>
+    </Grid>
+</Window>

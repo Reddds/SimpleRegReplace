@@ -1,0 +1,19 @@
+﻿<Window x:Class="SimpleRegReplace.AddTag"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddTag" Height="514.42" Width="489.969">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="438*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Название тега" Margin="10,10,10,9.8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBox Grid.Column="1" Margin="10,10,10.2,9.8" TextWrapping="Wrap" Text="TextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <DataGrid Grid.Column="1" HorizontalAlignment="Left" Margin="48,74.2,0,0" Grid.Row="1" VerticalAlignment="Top" Height="263" Width="209"/>
+
+    </Grid>
+</Window>

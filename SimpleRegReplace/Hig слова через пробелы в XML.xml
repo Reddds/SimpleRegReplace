@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Pattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Hig слова через пробелы в XML.xml">
+  <Item>
+    <SearchString> </SearchString>
+    <ReplaceString>&lt;/Word&gt;&lt;Word&gt;</ReplaceString>
+  </Item>
+  <Item Enabled="false">
+    <SearchString>^</SearchString>
+    <ReplaceString>&lt;Word&gt;</ReplaceString>
+  </Item>
+</Pattern>

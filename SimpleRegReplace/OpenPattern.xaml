@@ -1,0 +1,62 @@
+﻿<controls:MetroWindow x:Class="SimpleRegReplace.OpenPattern"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        Title="OpenPattern" Height="607" Width="662.2">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <DataGrid AutoGenerateColumns="False" Margin="12,12,178,341" Name="dataGrid1" AlternatingRowBackground="#FFECECEC" FrozenColumnCount="1" >
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding Enabled}" Header="Вкл">
+                    
+                </DataGridCheckBoxColumn>
+                <DataGridTemplateColumn Header="Сорт" Width="50">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="bUp" Width="20" FontSize="10" Height="16" Padding="0" Click="BUpClick" >▲</Button>
+                                <Button x:Name="bDown" Margin="2,0,0,0" FontSize="10" Width="20" Height="16" Click="BDownClick">▼</Button>
+                            </StackPanel>
+                            
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Шаблон поиска" Binding="{Binding SearchString}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Шаблон замены" Binding="{Binding ReplaceString}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Плагин" Binding="{Binding PluginName}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Закрыть" Height="29" HorizontalAlignment="Right" Margin="0,0,12,12" Name="button1" VerticalAlignment="Bottom" Width="123" Click="Button1Click" />
+        <Button Content="Сохранить" Height="29" HorizontalAlignment="Right" Margin="0,0,148,12" Name="button2" VerticalAlignment="Bottom" Width="112" Click="Button2Click" />
+        <GroupBox Header="Тест шаблона" Height="262" Margin="10,0,9.8,46" Name="groupBox1" VerticalAlignment="Bottom">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="23" />
+                    <RowDefinition Height="93*" />
+                    <RowDefinition Height="23" />
+                    <RowDefinition Height="78*" />
+                </Grid.RowDefinitions>
+                <TextBox  Grid.Row="1" TextWrapping="Wrap" Name="tbSource" AcceptsReturn="True" />
+                <Label Content="Исходный текст" />
+                <Label Content="Результат" Grid.Row="2"  />
+                <Button Content="Проверить" Grid.Row="2" HorizontalAlignment="Right" Click="ButtonClick" Name="bTestPattern" />
+                <TextBox  Grid.Row="3" TextWrapping="Wrap" Name="tbResult" />
+            </Grid>
+        </GroupBox>
+        <ComboBox Height="23" Margin="95,0,26.8,313" Name="cbInsertMacros" VerticalAlignment="Bottom" SelectionChanged="cbInsertMacros_SelectionChanged" />
+        <Label Content="Вставить" Height="28" Margin="12,0,15.8,308" Name="label1" VerticalAlignment="Bottom" />
+        
+        <Label Content="Для шаблона:&#xD;&#xA;&lt;abc&gt;(((?!abc).)+)&lt;/abc&gt;&#xD;&#xA;&#xD;&#xA;&lt;g&gt;$1&lt;/g&gt;&#xD;&#xA;&#xD;&#xA;Строка&#xD;&#xA;&#xD;&#xA;&lt;abc&gt;sd&lt;/abc&gt;ff &lt;/abc&gt;&#xD;&#xA;&#xD;&#xA;Преобразуется в&#xD;&#xA;&lt;g&gt;sd&lt;/g&gt;ff &lt;/abc&gt;" HorizontalAlignment="Right" Height="227" Margin="0,12,10,0" VerticalAlignment="Top" Width="160" Background="#FFFFFBD6"/>
+    </Grid>
+</controls:MetroWindow>

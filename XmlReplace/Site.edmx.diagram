@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c367afb29a1c446ea7e06ac744a5f7a9" Name="Diagram1">
+        <EntityTypeShape EntityType="main26Model.Applications" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_Applications" Width="1.5" PointX="5.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_Membership" Width="1.5" PointX="11" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_Paths" Width="1.5" PointX="8" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_PersonalizationAllUsers" Width="1.5" PointX="10.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_PersonalizationPerUser" Width="1.5" PointX="10.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_Profile" Width="1.5" PointX="15.5" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_Roles" Width="1.5" PointX="8" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_SchemaVersions" Width="1.5" PointX="5.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_Users" Width="1.5" PointX="13.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.aspnet_WebEvent_Events" Width="1.5" PointX="5.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.id_ExerTypes" Width="1.5" PointX="17.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_exercises" Width="1.5" PointX="20" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_ExerResults" Width="1.5" PointX="7.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_ExerSections" Width="1.5" PointX="17.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_I18n" Width="1.5" PointX="3.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_Langs" Width="1.5" PointX="1.5" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_Modules" Width="1.5" PointX="7.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_Pages" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_RegisteredModules" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_Registration" Width="1.5" PointX="9.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_RegModulesToPages" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_ResetPassword" Width="1.5" PointX="9.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_Roles" Width="1.5" PointX="11.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_Sections" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_Sessions" Width="1.5" PointX="13.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_SiteSettings" Width="1.5" PointX="7.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_sound_exer_progress" Width="1.5" PointX="15.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_sound_exer_tries" Width="1.5" PointX="17.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_SoundBaseInnerPhonemes" Width="1.5" PointX="17.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_SoundBasePhonemes" Width="1.5" PointX="19.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_SoundBaseTranslation" Width="1.5" PointX="3.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_SoundBaseWords" Width="1.5" PointX="19.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_Templates" Width="1.5" PointX="19.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_user_ips" Width="1.5" PointX="19.75" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_UserAccess" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_userdata" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.is_UserRoles" Width="1.5" PointX="1.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.Log" Width="1.5" PointX="0.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.Memberships" Width="1.5" PointX="15" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.Profiles" Width="1.5" PointX="19.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.Roles" Width="1.5" PointX="15" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="main26Model.Users" Width="1.5" PointX="17.25" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="main26Model.MembershipApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.RoleApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.UserApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK__aspnet_Me__Appli__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK__aspnet_Pa__Appli__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK__aspnet_Ro__Appli__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK__aspnet_Us__Appli__0DAF0CB0" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK__aspnet_Me__UserI__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK__aspnet_Pe__PathI__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK__aspnet_Pe__PathI__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK__aspnet_Pe__UserI__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK__aspnet_Pr__UserI__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_Rel_ExerTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_Rel_ExerSections" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_Rel_Lang" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_LangId" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_Langs_User" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_Page_RegModulesToPage" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_Rel_Sections" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_RegModule_RegModulesToPage" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_Section_RegModulesToPage" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_ParentSection" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_Sections_UserAccess" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_Users_UserAccess" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.FK_UserRoles_User" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.MembershipUser" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.aspnet_UsersInRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="main26Model.UsersInRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<Pattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Hig Page to Web">
+  <Item>
+    <SearchString>&lt;first&gt;(((?!&lt;/?first&gt;).)+)&lt;/first&gt;</SearchString>
+    <ReplaceString>&lt;p&gt;$1&lt;/p&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;para&gt;(((?!&lt;/?para&gt;).)+)&lt;/para&gt;</SearchString>
+    <ReplaceString>&lt;p&gt;$1&lt;/p&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;txt_b_b&gt;(((?!&lt;/?txt_b_b&gt;).)+)&lt;/txt_b_b&gt;</SearchString>
+    <ReplaceString>&lt;b&gt;$1&lt;/b&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;bold&gt;(((?!&lt;/?bold&gt;).)+)&lt;/bold&gt;</SearchString>
+    <ReplaceString>&lt;b&gt;$1&lt;/b&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;\?xml:stylesheet type="text/xsl" href="[^"]+"\?&gt;</SearchString>
+    <ReplaceString />
+  </Item>
+  <Item>
+    <SearchString>&lt;teorija/&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;fon1&gt;((?!&lt;/?fon1&gt;).)+&lt;/fon1&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;deep\d+/&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;opnfile&gt;((?!&lt;/?opnfile&gt;).)+&lt;/opnfile&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;unit number="\d+"&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;theory language="(\w{2})"&gt;(((?!&lt;/?theory&gt;).)+)&lt;/theory&gt;</SearchString>
+    <ReplaceString>&lt;lang id="$1"&gt;$2&lt;/lang&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;mainmenu num="\d+"/&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;navigator textnum="\d+" pagenum="\d+" zvuknum="\d+" /&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;topic lang="\w+"&gt;(((?!&lt;/?topic&gt;).)+)&lt;/topic&gt;</SearchString>
+    <ReplaceString>&lt;page&gt;$1&lt;/page&gt;</ReplaceString>
+  </Item>
+  <Item Enabled="false">
+    <SearchString>&lt;/topic&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;page num="([^"]+)" deep="\d+"&gt;(((?!&lt;/?page&gt;).)+)&lt;/page&gt;</SearchString>
+    <ReplaceString>&lt;content title="$1"&gt;$2&lt;/content&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;/unit&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;li_navig pagename="\w+"\s*(?:menuname="\w+")?\s*&gt;(((?!&lt;/?li_navig&gt;).)+)&lt;/li_navig&gt;</SearchString>
+    <ReplaceString>&lt;li&gt;&lt;link id=""&gt;$1&lt;/link&gt;&lt;/li&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;targettopl_navig menuname="\w+" /&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;part&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;/part&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;link_navig pagename="\w+"\s*(?:menuname="\w+")&gt;(((?!&lt;/?link_navig&gt;).)+)&lt;/link_navig&gt;</SearchString>
+    <ReplaceString>&lt;link id=""&gt;$1&lt;/link&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;link target="[^"]+"&gt;(((?!&lt;/?link&gt;).)+)&lt;/link&gt;</SearchString>
+    <ReplaceString>&lt;link id=""&gt;$1&lt;/link&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;li target="[^"]+"&gt;(((?!&lt;/?li&gt;).)+)&lt;/li&gt;</SearchString>
+    <ReplaceString>&lt;li&gt;&lt;link id=""&gt;$1&lt;/link&gt;&lt;/li&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;gif/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;txt_b_i&gt;(((?!&lt;/?txt_b_i&gt;).)+)&lt;/txt_b_i&gt;</SearchString>
+    <ReplaceString>&lt;i&gt;$1&lt;/i&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;targettopl&gt;((?!&lt;/?targettopl&gt;).)+&lt;/targettopl&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;tense&gt;(((?!&lt;/?tense&gt;).)+)&lt;/tense&gt;</SearchString>
+    <ReplaceString>&lt;span class="tense"&gt;$1&lt;/span&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;example&gt;(((?!&lt;/?example&gt;).)+)&lt;/example&gt;</SearchString>
+    <ReplaceString>&lt;span class="gram-example"&gt;$1&lt;/span&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;exercise&gt;\s*\.+\s*&lt;/exercise&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;exercise/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;tema&gt;(((?!&lt;/?tema&gt;).)+)&lt;/tema&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;number&gt;\d+&lt;/number&gt;</SearchString>
+  </Item>
+</Pattern>

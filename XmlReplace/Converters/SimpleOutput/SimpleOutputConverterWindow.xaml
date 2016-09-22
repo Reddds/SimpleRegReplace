@@ -1,0 +1,16 @@
+﻿<Window x:Class="XmlReplace.Converters.SimpleOutput.SimpleOutputConverterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SimpleOutputConverterWindow" Height="427.835" Width="574.03">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Копировать всё" Margin="5" Click="ButtonBase_OnClick" Padding="7,0"></Button>
+            <CheckBox Name="CbRemoveXmlDeclaration" Content="Не выводить Xml декларацию" IsChecked="True" VerticalAlignment="Center" Margin="10,0,0,0"></CheckBox>
+        </StackPanel>
+        <TextBox AcceptsReturn="True" Name="XmlOut" Margin="10" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Text="{Binding Mode=OneWay}" Grid.Row="1"></TextBox>
+    </Grid>
+</Window>

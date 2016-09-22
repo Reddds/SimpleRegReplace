@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Pattern">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Item">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SearchString" type="xs:string" />
+              <xs:element name="ReplaceString" type="xs:string" />
+              <xs:element name="PluginName" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>
+                    Имя плагина для обработки данных совпадений
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Enabled" type="xs:boolean" default="true"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required" />
+      
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

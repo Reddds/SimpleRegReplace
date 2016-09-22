@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<Pattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Hig Page to Web">
+  <Item>
+    <SearchString>&lt;txt_b_b&gt;(((?!&lt;/?txt_b_b&gt;).)+)&lt;/txt_b_b&gt;</SearchString>
+    <ReplaceString>&lt;b&gt;$1&lt;/b&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;first&gt;(((?!&lt;/?first&gt;).)+)&lt;/first&gt;</SearchString>
+    <ReplaceString>&lt;p&gt;$1&lt;/p&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;\?xml:stylesheet type="text/xsl" href="[^"]+"\?&gt;</SearchString>
+    <ReplaceString />
+  </Item>
+  <Item>
+    <SearchString>&lt;teorija/&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;fon1&gt;((?!&lt;/?fon1&gt;).)+&lt;/fon1&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;deep\d+/&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;opnfile&gt;((?!&lt;/?opnfile&gt;).)+&lt;/opnfile&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;unit number="\d+"&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;theory language="(\w{2})"&gt;(((?!&lt;/?theory&gt;).)+)&lt;/theory&gt;</SearchString>
+    <ReplaceString>&lt;lang id="$1"&gt;$2&lt;/lang&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;mainmenu num="\d+"/&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;navigator textnum="\d+" pagenum="\d+" zvuknum="\d+" /&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;topic lang="\w+"&gt;(((?!&lt;/?topic&gt;).)+)&lt;/topic&gt;</SearchString>
+    <ReplaceString>&lt;page&gt;$1&lt;/page&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;page num="([^"]+)" deep="\d+"&gt;(((?!&lt;/?page&gt;).)+)&lt;/page&gt;</SearchString>
+    <ReplaceString>&lt;content title="$1"&gt;$2&lt;/content&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;/unit&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;li_navig pagename="\w+" menuname="\w+"&gt;(((?!&lt;/?li_navig&gt;).)+)&lt;/li_navig&gt;</SearchString>
+    <ReplaceString>&lt;li&gt;&lt;link id=""&gt;$1&lt;/link&gt;&lt;/li&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;targettopl_navig menuname="\w+" /&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;part&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;/part&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;page num="(?:[^"]+)" soundname="([^"]+)"&gt;(((?!&lt;/?page&gt;).)+)&lt;/page&gt;</SearchString>
+    <ReplaceString>&lt;content title="$1"&gt;$2&lt;/content&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;num&gt;\d+&lt;/num&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;description language="(\w+)"&gt;(((?!&lt;/?description&gt;).)+)&lt;/description&gt;</SearchString>
+    <ReplaceString>&lt;lang id="$1"&gt;$2&lt;/lang&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;sounds_frame markcommon="yes"/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;sounds_frame mark="yes"/&gt;</SearchString>
+  </Item>
+  <Item>
+    <SearchString>&lt;image&gt;(\w+)&lt;/image&gt;</SearchString>
+    <ReplaceString>&lt;img src="$1.gif" class="arti" /&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;sound&gt;([^\&lt;]+)&lt;/sound&gt;</SearchString>
+    <ReplaceString>&lt;module type="sound" phraseId="$1" /&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;lang id="CH"&gt;</SearchString>
+    <ReplaceString>&lt;lang id="zh"&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;lang id="GB"&gt;</SearchString>
+    <ReplaceString>&lt;lang id="en"&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;lang id="SP"&gt;</SearchString>
+    <ReplaceString>&lt;lang id="es"&gt;</ReplaceString>
+  </Item>
+</Pattern>

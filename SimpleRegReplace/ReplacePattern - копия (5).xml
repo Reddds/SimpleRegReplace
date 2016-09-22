@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Pattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Из Joomla! редактора. Очистка от Word">
+  <Item>
+    <SearchString>class="MsoNormal"</SearchString>
+    <ReplaceString />
+  </Item>
+  <Item>
+    <SearchString>style="text-indent: 1.0cm;"</SearchString>
+    <ReplaceString />
+  </Item>
+  <Item Enabled="false">
+    <SearchString>&lt;span\s*style="\s*font-size: [0-9\.]+(?:(?:pt)|(?:px)|%);\s*line-height: [0-9\.]+(?:(?:pt)|(?:px)|%);\s*"&gt;(?&lt;inText&gt;(?:(?&lt;!span).)*(?&lt;!span))&lt;/span&gt;</SearchString>
+    <ReplaceString>${inText}</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;strong style="mso-bidi-font-weight: normal;"&gt;</SearchString>
+    <ReplaceString>&lt;strong&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;span style="mso-spacerun: yes;"&gt;\s+&lt;/span&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;span&gt;\s*&lt;/span&gt;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;span style="mso-bidi-font-weight: normal;"&gt;(?&lt;inText&gt;(?:(?&lt;!span).)*(?&lt;!span))&lt;/span&gt;</SearchString>
+    <ReplaceString>${inText}</ReplaceString>
+  </Item>
+  <Item Enabled="false">
+    <SearchString>&lt;span\s+style="font-size: [0-9\.]+(?:(?:pt)|(?:px)|%);"&gt;(?&lt;inText&gt;(?:(?&lt;!span).)*(?&lt;!span))&lt;/span&gt;</SearchString>
+    <ReplaceString>${inText}</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&amp;nbsp;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>style="line-height: normal;"</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>line-height: normal;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>style="mso-bidi-font-style: normal;"</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>margin-bottom: [0-9\.]+(?:(?:pt)|(?:px)|%);</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>class="Apple-style-span"</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;b style="mso-bidi-font-weight: normal;"&gt;</SearchString>
+    <ReplaceString>&lt;b&gt;</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;span style="color: black;"&gt;(?&lt;inText&gt;(?:(?&lt;!span).)*(?&lt;!span))&lt;/span&gt;</SearchString>
+    <ReplaceString>${inText}</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>font-size: [0-9\.]+(?:(?:pt)|(?:px)|%);</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>line-height: [0-9\.]+(?:(?:pt)|(?:px)|%);</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>&lt;span\s+&gt;(?&lt;inText&gt;(?:(?&lt;!span).)*(?&lt;!span))&lt;/span&gt;</SearchString>
+    <ReplaceString>${inText}</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>style="\s*"</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>color: #000000;</SearchString>
+    <ReplaceString> </ReplaceString>
+  </Item>
+</Pattern>

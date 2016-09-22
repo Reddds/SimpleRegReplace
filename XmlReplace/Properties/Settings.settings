@@ -1,0 +1,19 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="XmlReplace.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SourceStr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version='1.0'?&gt;        
+&lt;!-- This is a sample XML document --&gt;        
+&lt;Items&gt;          
+&lt;Item&gt;
+test with a child element &lt;more/&gt; stuff&lt;/Item&gt;        &lt;/Items&gt;</Value>
+    </Setting>
+    <Setting Name="TemplStr" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SimpleOutputRemoveXmlDeclaration" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

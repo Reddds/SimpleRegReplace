@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Pattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Из Joomla! редактора. Очистка от Word">
+  <Item>
+    <SearchString>FreqRange="(?&lt;freq1&gt;\d+)-(?&lt;freq2&gt;\d+)"</SearchString>
+    <ReplaceString>FreqStart="${freq1}" FreqEnd="${freq2}"</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>(?&lt;part1&gt;&lt;Var[^&lt;]+)(?&lt;d1&gt;Disabled="true")(?&lt;part2&gt;[^&lt;]+&gt;)</SearchString>
+    <ReplaceString>${part1}Enabled="false"${part2}</ReplaceString>
+  </Item>
+  <Item>
+    <SearchString>(?&lt;part1&gt;&lt;Var[^&lt;]+Description="[_]+"\s+)(?!Disabled="\w+")(?!Enabled="\w+")(?&lt;part2&gt;\s*/&gt;)</SearchString>
+    <ReplaceString>${part1} Enabled="true"${part2}</ReplaceString>
+  </Item>
+</Pattern>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="XmlReplace.InputNameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Введите имя набора" Height="120" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label VerticalAlignment="Center" Content="Имя" Width="40" HorizontalAlignment="Left" Margin="10,0,0,0"></Label>
+        <TextBox Name="TbSetName" VerticalAlignment="Center" Margin="60,0,10,0" ></TextBox>
+        <Button Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Content="Ok" Height="30" Width="75" Margin="0,0,90,0" Click="BOkClick"></Button>
+        <Button Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Content="Отмена" Height="30" Width="75" Margin="0,0,10,0" Click="BCancelClick"></Button>
+
+    </Grid>
+</Window>
